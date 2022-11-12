@@ -1,0 +1,146 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    width: 380px;
+    height: 420px;
+    background-color: rgb(254, 255, 255);
+    padding: 10px;
+    border-radius: 10%;
+    margin: 10px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 8px rgb(0 0 0 / 10%), 0 10px 18px rgb(0 0 0 / 10%);
+}
+
+
+input::placeholder{
+    color: #dddfe2;
+}
+
+#user_senha{
+    display: flex;
+flex-direction: column;
+}
+
+.mensagem{
+    color: #6a6868;
+    padding: 5px;
+}
+label,.mensagem{
+    font-weight: 900;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#body_login{
+    background: linear-gradient(
+        90deg,
+        #FFFEF9 50%,
+        #2f833d  0%,
+        #2F9E41  100%
+      );
+}
+
+#body_sucess{
+    background-color: #FFFEF9 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    height: 30px;
+    width: 280px;
+    padding: 5px 7px;
+    border-radius: 7px;
+    border-color: cornflowerblue;
+    border: 1px solid #dddfe2;
+}
+
+label,h1{
+   
+    color: black;
+    margin: 5px;
+}
+
+h1,h3,p{ 
+    text-align: center;
+}
+
+
+h3{
+    color: darkgrey;
+    margin: 5px 12px 10px;
+    font-size: 12pt;
+}
+
+
+button{
+    text-align: center;
+    margin: 20px 0;
+    height: 35px;
+    width: 295px;
+    background-color: #2F9E41;
+    color: #FFFEF9;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgb(0 0 0 / 10%), 0 10px 18px rgb(0 0 0 / 10%);
+    /* padding: 5%; */
+}
+
+button:hover{
+    /* width: 110px; */
+    background-color: #236e30;
+    color: #f0f2f5;
+
+}
+
+
+.container.-imagem{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px)
+{
+  #check_imagem{
+    width: 200px;
+  }
+
+  .mensagem{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 300px)
+{
+  #check_imagem{
+    width: 100px;
+  }
+
+ .mensagem{
+    font-size: 10px;
+  }
+
+}
