@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>iFruta</title>
+
+   <link rel="stylesheet" href="./public/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@200&display=swap"
+      rel="stylesheet">
+  
+</head>
+
+<body id="body_login" onload="teste()">
+   <header><img id="logo" src="./public/logo.png" alt=""></header>
+   <section class="section">
+      <div class="box">
+         <h1>LOGIN </h1>
+         <h3>Por favor, identifique-se <br> (usuário e senha do moodle)</h3>
+         <div id="user_senha">
+            <label for="user">Identificação do Usuário: </label>
+            <input type="text" name="user" id="user" placeholder="Identificação do usuário">
+
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+         </div>
+         <button id="login" onclick="loginSucess();">ENTRAR</button>
+
+      </div>
+
+
+   </section>
+   <script src="script.js"></script>
+</body>
+
+</html>
