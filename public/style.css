@@ -29,11 +29,11 @@ input::placeholder{
 flex-direction: column;
 }
 
-.mensagem{
+.mensagem, #data{
     color: #6a6868;
     padding: 5px;
 }
-label,.mensagem{
+label,.mensagem, #data{
     font-weight: 900;
 }
 
@@ -54,7 +54,7 @@ label,.mensagem{
       );
 }
 
-#body_sucess{
+#body_sucess, #data{
     background-color: #FFFEF9 ;
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@ label,h1{
     margin: 5px;
 }
 
-h1,h3,p{ 
+h1,h3,p,#data{ 
     text-align: center;
 }
 
@@ -128,7 +128,7 @@ button:hover{
     width: 200px;
   }
 
-  .mensagem{
+  .mensagem, #data{
     font-size: 15px;
   }
 }
@@ -139,7 +139,7 @@ button:hover{
     width: 100px;
   }
 
- .mensagem{
+ .mensagem, #data{
     font-size: 10px;
   }
 
