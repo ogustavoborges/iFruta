@@ -1,11 +1,10 @@
-
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-#data{
+#data {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
@@ -16,7 +15,8 @@ body{
     background-color: rgb(254, 255, 255);
     padding: 10px;
     border-radius: 10%;
-    margin: 10px;;
+    margin: 10px;
+    ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,51 +25,55 @@ body{
 }
 
 
-input::placeholder{
+input::placeholder {
     color: #dddfe2;
 }
 
-#user_senha{
+#user_senha {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 }
 
-.mensagem, #data{
+.mensagem,
+#data {
     color: #6a6868;
     padding: 5px;
 }
-label,.mensagem, #data{
+
+label,
+.mensagem,
+#data {
     font-weight: 900;
 }
 
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#body_login{
-    background: linear-gradient(
-        90deg,
-        #FFFEF9 50%,
-        #2f833d  0%,
-        #2F9E41  100%
-      );
+#body_login,
+#body_qr_code_page {
+    background: linear-gradient(90deg,
+            #FFFEF9 50%,
+            #2f833d 0%,
+            #2F9E41 100%);
 }
 
-#body_sucess{
-    background-color:#FFFEF9 ;
+#body_sucess {
+    background-color: #FFFEF9;
 }
+
 .checkmark {
     display: block;
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
-  }
+}
 
-section{
+section {
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -77,7 +81,7 @@ section{
     justify-content: center;
 }
 
-input{
+input {
     height: 30px;
     width: 280px;
     padding: 5px 7px;
@@ -85,25 +89,29 @@ input{
     border: 1px solid #dddfe2;
 }
 
-label,h1{
-   
+label,
+h1 {
+
     color: black;
     margin: 5px;
 }
 
-h1,h3,p,#data{ 
+h1,
+h3,
+p,
+#data {
     text-align: center;
 }
 
 
-h3{
+h3 {
     color: darkgrey;
     margin: 5px 12px 10px;
     font-size: 12pt;
 }
 
 
-button{
+button {
     text-align: center;
     margin: 20px 0;
     height: 35px;
@@ -117,48 +125,49 @@ button{
     /* padding: 5%; */
 }
 
-button:hover{
+button:hover {
     /* width: 110px; */
     background-color: #236e30;
     color: #f0f2f5;
 
 }
 
-.container.-imagem{
+.container.-imagem {
     margin-bottom: 10px;
 }
 
-@media (max-width: 600px)
-{
-  #check_imagem{
-    width: 200px;
-  }
+@media (max-width: 600px) {
+    #check_imagem {
+        width: 200px;
+    }
 
-  .mensagem, #data{
-    font-size: 15px;
-  }
+    .mensagem,
+    #data {
+        font-size: 15px;
+    }
 
-  .checkmark{
-    width: 150px;
-    height: 150px;
-  }
+    .checkmark {
+        width: 150px;
+        height: 150px;
+    }
 
-  svg{
-    width: 200px;
-    height: 220px;;
-  }
+    svg {
+        width: 200px;
+        height: 220px;
+        ;
+    }
 
 
 }
 
-@media (max-width: 300px)
-{
-  #check_imagem{
-    width: 100px;
-  }
+@media (max-width: 300px) {
+    #check_imagem {
+        width: 100px;
+    }
 
- .mensagem, #data{
-    font-size: 10px;
-  }
+    .mensagem,
+    #data {
+        font-size: 10px;
+    }
 
 }

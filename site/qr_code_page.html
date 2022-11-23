@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFruta</title>
+
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body id="body_qr_code_page">
+    <header><img src="./public/logo.png" alt=""></header>
+
+    <section class="section">
+        <div class="box">
+            <script src="html5-qrcode.min.js"></script>
+            <style>
+                .result {
+                    background-color: green;
+                    color: #fff;
+                    padding: 20px;
+                }
+
+                .row {
+                    display: flex;
+                }
+            </style>
+
+
+            <div class="row">
+                <div class="col">
+                    <div style="width:500px;" id="reader"></div>
+                </div>
+                <div class="col" style="padding:30px;">
+                    <h4>SCAN RESULT</h4>
+                    <div id="result">Result Here</div>
+                </div>
+            </div>
+
+
+            <script type="text/javascript">
+                function onScanSuccess(qrCodeMessage) {
+                    alert("sucesso");
+                    document.getElementById('result').innerHTML = '<span class="result">' + qrCodeMessage + '</span>';
+                }
+
+                function onScanError(errorMessage) {
+                    alert("erro");
+                    //handle scan error
+                }
+
+                var html5QrcodeScanner = new Html5QrcodeScanner(
+                    "reader", { fps: 10, qrbox: 250 });
+                html5QrcodeScanner.render(onScanSuccess, onScanError);
+
+            </script>
+
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
